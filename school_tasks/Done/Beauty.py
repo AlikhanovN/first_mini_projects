@@ -1,0 +1,7 @@
+k = int(input("Bust: "))
+m = int(input("Hips: "))
+n = int(input("Waist: "))
+t = int(input("Growth: "))
+p = int(input("Weight: "))
+l = k * m * t / ((n ** 2) * p)
+print(l)
