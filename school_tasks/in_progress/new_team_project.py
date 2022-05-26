@@ -45,3 +45,36 @@ print("Task10")
 spisok_1 = {'Lamborgini', 17, '4456', 2020, 'Paris', 'USA', 11, 23}
 spisok_2 = {'Ferrari', 17, 4456, 2021, 'Paris', 'UK', 777, 23}
 print(spisok_2.difference(spisok_1))
+
+print("Task11")
+for i in range(301):
+    if i % 2 == 0:
+        print(i)
+    elif i == 237:
+        break
+
+print("Task12")
+count = 0
+text = input("Enter text (min 6 words): ")
+for i in text.split(" "):
+    count += 1
+if count <= 5:
+    count = 0
+while count <= 5:
+    text = input("Enter text (min 6 words): ")
+    for i in text.split(" "):
+        count += 1
+    if count <= 5:
+        count = 0
+new_t = text[0:(len(text) // 2) + 1]
+new_2 = text[(len(text) // 2) + 1::]
+new_3 = new_2 + new_t
+print(new_t)
+print(new_3)
+
+''' Aidana
+Task13
+Task14
+Task15
+Task16
+'''
