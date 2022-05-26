@@ -23,3 +23,11 @@ data_dict["month"] = new_data[1]
 data_dict["day"] = new_data[2]
 data_dict["time"] = time
 print(data_dict)
+
+print("Task6")
+print("mkdir -p new/new2")
+
+print("Task7")
+print("cd ~alikhanov/Desktop/")
+
+print("Task8")
