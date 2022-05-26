@@ -13,3 +13,13 @@ while a:
 print(counter)
 
 print("Task 4")
+data = input("Data format (2020-10-24 18:30): ")
+time = data.split(" ")[1]
+new_data = data.split(" ")[0].split("-")
+print(new_data.extend(time))
+data_dict = {}
+data_dict["year"] = new_data[0]
+data_dict["month"] = new_data[1]
+data_dict["day"] = new_data[2]
+data_dict["time"] = time
+print(data_dict)
