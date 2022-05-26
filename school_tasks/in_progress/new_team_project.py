@@ -31,3 +31,17 @@ print("Task7")
 print("cd ~alikhanov/Desktop/")
 
 print("Task8")
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+for i in a:
+    if i > 5:
+        print(i)
+
+print("Task9")
+digits = (113,118,-5,1,135,137,0,142,144,17,154,0,155,2,159,172)
+for i in digits:
+    print(i / 9)
+
+print("Task10")
+spisok_1 = {'Lamborgini', 17, '4456', 2020, 'Paris', 'USA', 11, 23}
+spisok_2 = {'Ferrari', 17, 4456, 2021, 'Paris', 'UK', 777, 23}
+print(spisok_2.difference(spisok_1))
