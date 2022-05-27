@@ -109,3 +109,26 @@ while flag == True:
         print(i, end="")
     flag = False
 
+#2Aidana
+A = int(input('a: '))
+B = int(input('b: '))
+C = int(input('c: '))
+A , B, C = A + B , C - A , A + B + C
+print(A , B, C)
+
+#3Aidana
+square = int(input('сторона квадрата: '))
+p = square*4
+s = square**2
+print('периметр:', p,'площадь:', s)
+
+#6Aidana
+a = input('введите четырехзначное число: ')
+c = 0
+for i in range(len(a)):
+    if a[i] < a[i-1]:
+       c += 1
+if c == len(a) - 1:
+    print(True) 
+else:
+    print(False)
