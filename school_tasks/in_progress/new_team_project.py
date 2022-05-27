@@ -78,3 +78,72 @@ Task14
 Task15
 Task16
 '''
+#1
+print('Task1')
+count = 0
+for i in range(1, 10):
+    if i % 3 ==0 or i % 5 ==0:
+        count += i
+print(count)
+#1.1
+count1 = 0
+for i in range(1, 1000):
+    if i % 3 ==0 or i % 5 ==0:
+        count1 += i
+print(count1)
+
+#2
+print('Task2')
+a = 333
+b = 555
+a , b = b , a
+print(a , b)
+
+#5
+print('Task5')
+a = True
+print(a, a*5)
+print(a, a*7)
+
+#3
+print('Task13')
+numbers = [2,4,7,1,8.4,-3.3,7.1,-2,4,-1,7,-43,8,-3,6,9]
+num0 = 0
+num1 = 0
+for i in numbers:
+    if type(i) == float:
+        i *= 10
+    if i % 2 == 0:
+        num0 += 1
+    elif i % 2 == 1:
+        num1 += 1
+print('numbers = [2,4,7,1,8.4,-3.3,7.1,-2,4,-1,7,-43,8,-3,6,9]')
+print('количество не четных чисел: ' , num1)
+print('количество четных чисел: ' , num0)
+
+#4
+print('Task14')
+numbers2 = [0,2,4,7,1,8,0,-3,7,0,-2,4,0,0,-1,7,-43,0,8,-3,6,9] 
+num2 = []
+for i in numbers2:
+    if i < 0:
+        num2.append(-1)
+    elif i > 0:
+        num2.append(1)
+print(num2)
+
+#5
+print('Task15')
+my_list = [2,4,6,8,10,1,3,5,7,9,11,13,17]
+print(my_list)
+for i in range(0, len(my_list), 2):
+    print(my_list[i])
+
+
+#6
+print('Task16')
+numbers = [1,0,-2,4,3,6,6,3,5,8,4,2]
+print('numbers = [1,0,-2,4,3,6,6,3,5,8,4,2]')
+for i in range(1, len(numbers)):
+    if numbers[i] > numbers[i - 1]:
+        print(numbers[i])
