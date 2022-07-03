@@ -1,6 +1,6 @@
 import telebot
 
-tg_token = "1915579708:AAE-9eZAF_DuzN59Wr4RHgdsq2518f2cQrA"
+tg_token = "add tour token"
 bot = telebot.TeleBot(tg_token)
 
 @bot.message_handler(content_types=['text'])
