@@ -24,17 +24,22 @@ def sec_mes(pm, first_num, operation):
     second_num = pm.text
     res = 0
     try:
-        if operation == "+":
-            res = int(first_num) + int(second_num)
-        elif operation == "-":
-            res = int(first_num) - int(second_num)
-        elif operation == "*":
-            res = int(first_num) * int(second_num)
-        elif operation == "/":
-            res = int(first_num) / int(second_num)
-        last_mes = bot.send_message(pm.chat.id, f"The answer: {first_num} {operation} {second_num} = {res}")
+        if operation in ["+", "-", "*", "/"]:
+            if operation == "+":
+                res = int(first_num) + int(second_num)
+            elif operation == "-":
+                res = int(first_num) - int(second_num)
+            elif operation == "*":
+                res = int(first_num) * int(second_num)
+            elif operation == "/":
+                res = int(first_num) / int(second_num)
+            last_mes = bot.send_message(pm.chat.id, f"The answer: {first_num} {operation} {second_num} = {res}")
+        else:
+            bot.send_message(pm.chat.id, "Enter correct operation")
     except ValueError:
         bot.send_message(pm.chat.id, "Enter only Digits!")
+    except ZeroDivisionError:
+        bot.send_message(pm.chat.id, "Can not division by zero!")
 
 
 bot.polling(none_stop=True)
